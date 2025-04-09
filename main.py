@@ -1,4 +1,12 @@
 from stats import *
+import sys
+
+# Check if the number of command-line arguments is not equal to 2
+if len(sys.argv) != 2:
+    # If not, print a usage message
+    print("Usage: python3 main.py <path_to_book>")
+    # Exit the program with a status code of 1 to indicate an error
+    sys.exit(1)
 
 def get_book_text(filepath):
     """
@@ -51,7 +59,7 @@ def generate_report(filepath):
     print("============= END ===============")
 
 def main(): 
-    generate_report("books/frankenstein.txt")
+    generate_report(sys.argv[1])
 
 main()
     

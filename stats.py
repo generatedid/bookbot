@@ -62,25 +62,3 @@ def sort_dict_list(char_dict):
     sorted_dicts.sort(reverse=True, key=get_key)
     return sorted_dicts
     
-
-
-
-    # sort list of dicts
-
-# def format_report(char_dict):
-# print("============ BOOKBOT ============")
-# print("Analyzing book found at BOOK_FILE_PATH")
-# tutta la funzione
-# print("----------- Word Count ----------")
-# print("Found {word_count} total words")
-# print("--------- Character Count -------")
-# for element in dict:
-#     print(elem)
-# print("============= END ===============")
-
-
-#   and their counts and returns a sorted list of dictionaries.
-# - Each dictionary should have two key-value pairs: one for the character 
-#   itself and one for that character's count.
-# - Sort from greatest to least by the count.
-# - The .sort() method will be helpful here (see the hint).
